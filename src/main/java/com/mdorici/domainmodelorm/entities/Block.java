@@ -33,7 +33,6 @@ public class Block {
 	}
 
 	public Block(Long id, Instant startDate, Instant endDate) {
-		super();
 		this.id = id;
 		this.startDate = startDate;
 		this.endDate = endDate;
