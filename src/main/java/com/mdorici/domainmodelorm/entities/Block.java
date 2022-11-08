@@ -20,11 +20,10 @@ public class Block {
 	private Long id;
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-	private Instant start;
+	private Instant startDate;
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-	private Instant end;
-	
+	private Instant endDate;
 	
 	@ManyToOne
 	@JoinColumn(name = "activity_id")
@@ -33,10 +32,11 @@ public class Block {
 	public Block() {
 	}
 
-	public Block(Long id, Instant start, Instant end) {
+	public Block(Long id, Instant startDate, Instant endDate) {
+		super();
 		this.id = id;
-		this.start = start;
-		this.end = end;
+		this.startDate = startDate;
+		this.endDate = endDate;
 	}
 
 	public Long getId() {
@@ -47,20 +47,20 @@ public class Block {
 		this.id = id;
 	}
 
-	public Instant getStart() {
-		return start;
+	public Instant getStartDate() {
+		return startDate;
 	}
 
-	public void setStart(Instant start) {
-		this.start = start;
+	public void setStartDate(Instant startDate) {
+		this.startDate = startDate;
 	}
 
-	public Instant getEnd() {
-		return end;
+	public Instant getEndDate() {
+		return endDate;
 	}
 
-	public void setEnd(Instant end) {
-		this.end = end;
+	public void setEndDate(Instant endDate) {
+		this.endDate = endDate;
 	}
 
 	public Activity getActivity() {

@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mdorici</groupId>
-	<artifactId>domain-model-orm</artifactId>
+	<artifactId>dscommerce</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>domain-model-orm</name>
-	<description>Domain Model and ORM</description>
+	<name>dscommerce</name>
+	<description>DSCommerce</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -46,6 +46,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.10.1</version>
+			<type>maven-plugin</type>
 		</dependency>
 	</dependencies>
 
